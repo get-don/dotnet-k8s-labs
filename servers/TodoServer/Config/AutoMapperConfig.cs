@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using TodoServer.DTOs;
-using TodoServer.Models;
+using TodoServer.Entities;
 
 namespace TodoServer.Config;
 
