@@ -19,6 +19,13 @@ spec:
         - name: todo-server
           image: getdondev/todo-server:test
           imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "20Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
           ports:
             - containerPort: 8080
           startupProbe:
